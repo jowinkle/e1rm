@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>e1rm Calculator</title>
+  </head>
+  <body>
+    <section id="calculator">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h2>e1RM Calculator</h2>
+        </header>
+        <form action="">
+          <div class="weight-form">
+            <label for="name">Weight:</label>
+            <input id="weight-input" type="text" name="weight" required />
+          </div>
+          <div class="reps-form">
+            <label for="reps">Reps:</label>
+            <input id="reps-input" type="text" name="reps" required />
+          </div>
+          <div class="rpe-radios">
+            <label for="rpe8">RPE 8</label>
+            <input type="radio" name="rpe" />
+            <label for="rpe9">RPE 9</label>
+            <input type="radio" name="rpe" />
+            <label for="rpe10">RPE 10</label>
+            <input type="radio" name="rpe" />
+          </div>
+          <div class="output">
+            <p id="e1rm-output"></p>
+          </div>
+          <button id="btn" type="submit">Calculate</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
